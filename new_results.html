@@ -1,260 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="my18fApp">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>MedCheck</title>
-
-<!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="css/landing-page.css" rel="stylesheet">
-
-<!-- Custom Fonts -->
-<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MedCheck - Results for %MedicineName</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-  <div class="container topnav"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header"> <a class="navbar-brand topnav" href="#">MedCheck</a> </div>
-    <form class="navbar-search">
-      <div class="form-group" style="display:inline;">
-        <div class="input-group">
-          <input type="text" class="form-control">
-          <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span> </div>
-      </div>
-    </form>
-  </div>
-  </div>
-  <!-- /.container --> 
-</nav>
-<div class="container" id="content-section">
-<div class="col-md-6 hero-feature">
-<h3>Brand Name</h3>
-<h5>Generic Name</h5>
-<h5>Description / Purpose</h5>
-<br>
-</br>
-<div class="container">
-<div class="row">
-<div class="col-md-6 hero-feature">
-<div class="thumbnail">
-<img src="img/bad_bottle.png" alt="Recall Yes">
-<div class="caption">
-<h3>Recall - Yes</h3>
-<div class="bs-example">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Recall Number</a> </h4>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse in">
-        <div class="panel-body">
-        <p><ul><li>Recall Number</li>
-<li>Recall Initiation Date</li>
-<li>Reason for Recall</li>
-<li>Distribution Pattern</li>
-<li>Recalling Firm Name</li>
-<li>Quantity</li>
-<li>Product Description</li></ul>
- <a href="http://www.octoconsulting.com/" target="_blank">Learn more.</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Recall Number</a></h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse">
-        <div class="panel-body">
-         <p><ul><li>Recall Number</li>
-<li>Recall Initiation Date</li>
-<li>Reason for Recall</li>
-<li>Distribution Pattern</li>
-<li>Recalling Firm Name</li>
-<li>Quantity</li>
-<li>Product Description</li></ul>
- <a href="http://www.octoconsulting.com/" target="_blank">Learn more.</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Recall Number</a></h4>
-      </div>
-      <div id="collapseThree" class="panel-collapse collapse">
-        <div class="panel-body">
-          <p><ul><li>Recall Number</li>
-<li>Recall Initiation Date</li>
-<li>Reason for Recall</li>
-<li>Distribution Pattern</li>
-<li>Recalling Firm Name</li>
-<li>Quantity</li>
-<li>Product Description</li></ul>
- <a href="http://www.octoconsulting.com/" target="_blank">Learn more.</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container">
-<div class="row">
-<div class="col-md-6 hero-feature">
-<div class="thumbnail">
-<img src="img/good_bottle.png" alt="Recall No">
-<div class="caption">
-<h3>Recall - No</h3>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container" id="content-section">
-<div class="col-md-6 hero-feature">
-<h3>Brand Name</h3>
-<h5>Generic Name</h5>
-<h5>Description / Purpose</h5>
-<br>
-</br>
-<div class="container">
-<div class="row">
-<div class="col-md-6 hero-feature">
-<div class="thumbnail">
-<img src="img/bad_shield.png" alt="Adverse Events Yes">
-<div class="caption">
-<h3>Adverse Events - Yes</h3>
-<div class="bs-example">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Safety Report ID</a> </h4>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse in">
-        <div class="panel-body">
-         <p><ul><li>Safety Report Id</li>
-<li>Received Date</li>
-<li>Seriousness</li>
-<li>Non Serious</li>
-<li>Hospital</li>
-<li>Congenital</li>
-<li>Life Threatening</li>
-<li>Disability</li>
-<li>Death</li>
-<li>Reactions</li>
-<li>Patient Age</li>
-<li>Patient Sex</li>
-<li>Substance Names(s) </li></ul><a href="http://www.octoconsulting.com/" target="_blank">Learn more.</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Safety Report ID</a> </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse">
-        <div class="panel-body">
-            <p><ul><li>Safety Report Id</li>
-<li>Received Date</li>
-<li>Seriousness</li>
-<li>Non Serious</li>
-<li>Hospital</li>
-<li>Congenital</li>
-<li>Life Threatening</li>
-<li>Disability</li>
-<li>Death</li>
-<li>Reactions</li>
-<li>Patient Age</li>
-<li>Patient Sex</li>
-<li>Substance Names(s) </li></ul> <a href="http://www.octoconsulting.com/" target="_blank">Learn more.</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Safety Report ID</a> </h4>
-      </div>
-      <div id="collapseThree" class="panel-collapse collapse">
-        <div class="panel-body">
-          <p><ul><li>Safety Report Id</li>
-<li>Received Date</li>
-<li>Seriousness</li>
-<li>Non Serious</li>
-<li>Hospital</li>
-<li>Congenital</li>
-<li>Life Threatening</li>
-<li>Disability</li>
-<li>Death</li>
-<li>Reactions</li>
-<li>Patient Age</li>
-<li>Patient Sex</li>
-<li>Substance Names(s) </li></ul>
- <a href="http://www.octoconsulting.com/" target="_blank">Learn more.</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="container">
-<div class="row">
-<div class="col-md-6 hero-feature">
-<div class="thumbnail">
-<img src="img/good_shield.png" alt="Adverse Events No">
-<div class="caption">
-<h3>Adverse Events - No</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /.container -->
-
-   <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                 
-                        
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2015. All Rights Reserved</p>
+	<header class="container-fluid med-header">
+    	<div class="row">
+        	<div class="row-same-height">
+                <div class="col-md-4 col-md-height text-center">
+                    <img alt="MedCheck Logo" src="assets/images/logo_proposal_medcheck_banner.png" class="img-responsive"/>
+                </div>
+                <div class="col-md-8 col-middle col-md-height">
+                    <div class="input-group">
+                         <input type="text" class="form-control input-lg" placeholder="e.g. Tylenol PM">
+                         <span class="input-group-btn">
+                             <button class="btn btn-primary btn-lg" type="button">
+                             <span class="glyphicon glyphicon-search"></span>
+                             </button>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer> 
+        
+    </header>
+    <div class="container-fluid">
+    	<div class="row">
+        	<div class="col-md-4">
+            	<div class="panel med-panel">
+                	<div class="panel-body med-info">
+                        <h1 class="text-uppercase">Tylenol</h1>
+                        <span class="lead highlight">Generic Name</span>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nunc tellus, lobortis et cursus eu, mattis et augue. Suspendisse risus dui, sodales id quam a, placerat... [<a href="#">read more]</a></p>
+                        <nav>
+                        	<ul class="list-unstyled">
+                            	<li><a href="#" alt=""><span class="glyphicon glyphicon-ban-circle"></span> View Recalls</a></li>
+                            	<li><a href="#" alt=""><span class="glyphicon glyphicon-share"></span> Share Information</a></li>
+                            </ul>
+                        </nav>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+            	<div class="med-filters text-center">
+                	<ul class="list-inline list-unstyled">
+                      <li dropdown>
+                          <a dropdown-toggle class="white" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span ng-if="!events.filters.gender">Gender</span> <span ng-if="events.filters.gender"> {{events.filters.gender.val}} </span><span class="caret"></span>
+                          </a>
+                          <ul role="menu" class="dropdown-menu">
+                            <li><a ng-click="updateGender();">Any Gender</a></li>
+                            <li ng-repeat="genderItem in references.gender">
+                              <a ng-click="updateGender(genderItem);">{{genderItem.val}}</a>
+                            </li>
+                          </ul>
+                      </li>
+                      <li dropdown>
+                          <a dropdown-toggle class="white" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                              <span ng-if="!events.filters.age">Age</span> <span ng-if="events.filters.age && !events.filters.age.minAge"> Under {{events.filters.age.maxAge}} </span> <span ng-if="events.filters.age && events.filters.age.minAge && events.filters.age.maxAge" > Ages {{events.filters.age.minAge}} to {{events.filters.age.maxAge}} </span> <span ng-if="events.filters.age && !events.filters.age.maxAge"> {{events.filters.age.minAge}} and up </span> <span class="caret"></span>
+                          </a>
+                          <ul role="menu" class="dropdown-menu">
+                            <li><a ng-click="updateAge();">All ages</a></li>
+                            <li ng-repeat="ageItem in references.age">
+                              <a ng-if="!ageItem.minAge" ng-click="updateAge(ageItem);">Under {{ageItem.maxAge}}</a>
+                              <a ng-if="ageItem.minAge && ageItem.maxAge" ng-click="updateAge(ageItem);">Ages {{ageItem.minAge}} to {{ageItem.maxAge}}</a>
+                              <a ng-if="!ageItem.maxAge" ng-click="updateAge(ageItem);">{{ageItem.minAge}} and up</a>
+                            </li>
+                          </ul>
+                      </li> 
+                      <li dropdown>
+                          <a dropdown-toggle class="white" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                              <span ng-if="!events.filters.time">Time Frame</span> <span ng-if="events.filters.time && !events.filters.time.minDt">Past {{events.filters.time.maxDt}} years</span><span ng-if="events.filters.time &&!events.filters.time.maxDt">Over {{events.filters.time.minDt}} years</span><span class="caret"></span>
+                          </a>
+                          <ul role="menu" class="dropdown-menu">
+                            <li><a ng-click="updateTimeframe();">All time frames</a></li>
+                            <li ng-repeat="timeItem in references.timeline">
+                              <a ng-if="!timeItem.minDt" ng-click="updateTimeframe(timeItem);">Past {{timeItem.maxDt}} years</a>
+                              <a ng-if="!timeItem.maxDt" ng-click="updateTimeframe(timeItem);">Over {{timeItem.minDt}} years</a>
+                            </li>
+                          </ul>
+                      </li>
+                      <li dropdown>
+                          <a dropdown-toggle class="white" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                              <span ng-if="!events.filters.severity">Severity</span> <span ng-if="events.filters.severity"> {{events.filters.severity.val}} </span> <span class="caret"></span>
+                          </a>
+                          <ul role="menu" class="dropdown-menu">
+                            <li><a ng-click="updateSeverity();">View all severities</a></li>
+                            <li ng-repeat="seriousItem in references.seriousness">
+                              <a ng-click="updateSeverity(seriousItem);">{{seriousItem.val}}</a>
+                            </li>
+                          </ul>
+                      </li>                                                                 
+                    </ul>
+                </div>
+                <h3 class="text-center">Adverse Effects for <strong>Tylenol</strong> <span class="highlight">(2,400)</span></h3>
+                <section class="row">
+                    <div class="col-md-6">
+                        <div class="text-center med-graph">
+                            Graph 1
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center med-graph">
+                            Graph
+                        </div>
+                    </div>
+                </section>
+                <section class="row item-listing">
+                    <article class="col-md-12">
+                        <header class="row">
+                            <div class="col-md-12 item-detail">
+                                <div class="row-same-height">
+                                    <div class="col-sm-2 col-middle">
+                                        <img class="center-block hidden-xs" alt="image" src="assets/images/dials_V6_event4.png">
+                                        <h5 class="text-uppercase text-center small">Case#</h5>
+                                    </div>  
+                                    
+                                    <div class="col-sm-10 col-middle col-md-height">
+                                        <a class="item-link" href="#caseNum1" alt="Link to Effect Details" aria-expanded="false" aria-controls="caseNum2" data-toggle="collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur massa elit...</a>
+                                        <p class="text-muted small">June 24, 2015 <span class="pull-right">Patient: Male, Age: 71</span></p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </header> 
+                        <section id="caseNum1" class="collapse row"> 
+                            <div class="col-md-12">
+                                Details
+                            </div>
+                        </section>                              
+                    </article>
+                    <article class="col-md-12">
+                        <header class="row">
+                            <div class="col-md-12 item-detail">
+                                <div class="row-same-height">
+                                    <div class="col-sm-2 col-middle">
+                                        <img class="center-block hidden-xs" alt="image" src="assets/images/dials_V6_event4.png">
+                                        <h5 class="text-uppercase text-center small">Case#</h5>
+                                    </div>  
+                                    
+                                    <div class="col-sm-10 col-middle col-md-height">
+                                        <a class="item-link" href="#caseNum2" alt="Link to Effect Details" aria-expanded="false" aria-controls="caseNum2" data-toggle="collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur massa elit...</a>
+                                        <p class="text-muted small">June 24, 2015 <span class="pull-right">Patient: Male, Age: 71</span></p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <section id="caseNum2" class="collapse row"> 
+                            <div class="col-md-12">
+                                Details
+                            </div>
+                        </section>                              
+                    </article>
+                    <article class="col-md-12">
+                        <header class="row">
+                            <div class="col-md-12 item-detail">
+                                <div class="row-same-height">
+                                    <div class="col-sm-2 col-middle">
+                                        <img class="center-block hidden-xs" alt="image" src="assets/images/dials_V6_event4.png">
+                                        <h5 class="text-uppercase text-center small">Case#</h5>
+                                    </div>  
+                                    
+                                    <div class="col-sm-10 col-middle col-md-height">
+                                        <a class="item-link" href="#caseNum3" alt="Link to Effect Details" aria-expanded="false" aria-controls="caseNum3" data-toggle="collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur massa elit...</a>
+                                        <p class="text-muted small">June 24, 2015 <span class="pull-right">Patient: Male, Age: 71</span></p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <section id="caseNum3" class="collapse row"> 
+                            <div class="col-md-12">
+                                Details
+                            </div>
+                        </section>                              
+                    </article>
+                    <footer class="row">
+                        <nav class="text-center col-md-12">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+  
+  
 
-<!-- jQuery --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
-<script src="file:///C|/Users/Christine.cade/Desktop/startbootstrap-heroic-features-1.0.3/startbootstrap-heroic-features-1.0.3/js/jquery.js"></script> 
-
-<!-- Bootstrap Core JavaScript --> 
-<script src="file:///C|/Users/Christine.cade/Desktop/startbootstrap-heroic-features-1.0.3/startbootstrap-heroic-features-1.0.3/js/bootstrap.min.js"></script>
-</body>
+  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="assets/js/global.js"></script>
 </html>

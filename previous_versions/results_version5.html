@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="my18fApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MedCheck - Results for %MedicineName</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<header class="container">
+    	<div class="row">
+        	<div class="col-sm-4">
+            	<img alt="MedCheck Logo" src="assets/images/logo_proposal_medcheck_banner.png" class="img-responsive"/>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-md-8">
+            	<div class="input-group custom-search-form">
+                     <input type="text" class="form-control">
+                     <span class="input-group-btn">
+                         <button class="btn btn-primary" type="button">
+                         <span class="glyphicon glyphicon-search"></span>
+                         </button>
+                 	</span>
+                 </div><!-- /input-group -->
+            </div>
+        </div>
+        
+    </header>
+  
+  <article class="container med-info">
+  	<header class="row">
+    	<div class="col-md-8">
+        	<div class="page-title">
+                <h1>Brand Name</h1>
+                <h5>Type of Medicine</h5>
+            </div>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis. Pellentesque placerat libero vitae sagittis semper. Phasellus ut ipsum a metus condimentum tincidunt vel at justo. In auctor blandit cursus. In sagittis sodales mauris non cursus.</p>
+        </div>
+        <div class="col-md-4">
+        	<nav class="row">
+                <ul class="list-inline list-unstyled" role="tablist">
+                    <li class="active col-xs-6 text-center">
+                    	<img class="center-block" alt="image" src="assets/images/dial_full-01.png">
+                        <h4>Recalls</h4>
+                        <span class="center-block big-num">24</span>
+                    </li>
+                    <li class="col-xs-6 text-center">
+                    	<img class="center-block" alt="image" src="assets/images/dial_full-01.png">
+                        <h4>Adverse Events</h4>
+                        <span class="center-block big-num">4</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="row">
+    	<nav class="col-md-12 nav-tabs">
+        	<ul class="nav navbar-nav" role="tablist">
+                <li class="active">
+                    <a class="text-uppercase center-block" href="#recalls" aria-controls="recalls" role="tab" data-toggle="tab"><strong>Recalls</strong></a>
+                </li>
+                <li>
+                    <a class="text-uppercase" href="#events" aria-controls="events" role="tab" data-toggle="tab"><strong>Adverse Events</strong></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Tab panes -->
+  		<div class="tab-content col-md-12">
+            <section id="recalls" role="tabpanel" class="tab-pane active item-listing row">
+                <header class="col-md-12">
+                    <h3>24 Total Recalls</h3>
+                </header>
+                <article class="col-md-12">
+                    <header class="row">
+                    	<div class="col-xs-3 col-sm-1 col-md-1">
+                    		<img alt="image" class="img-responsive" src="assets/images/dial_full-01.png">
+                        </div>
+                        <div class="col-xs-8 col-sm-11 col-md-11">
+                        	<a data-toggle="collapse" href="#recallNumber001" aria-expanded="false" aria-controls="recallNumber001" ><strong>Recall Number</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis...</a>
+                        <small class="text-muted clearfix">June 18th, 2015</small>
+                        </div>
+                    </header>
+                    <section id="recallNumber001" class="collapse row">  
+                    	<div class="col-md-11 col-md-offset-1">
+                            <dl>
+                              <dt>Recall Number</dt>
+                              <dd>...</dd>
+                              <dt>Recall Initiation Date</dt>
+                              <dd>...</dd>
+                              <dt>Reason for Recall</dt>
+                              <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis. Pellentesque placerat libero vitae sagittis semper.</dd>
+                              <dt>Distribution Pattern</dt>
+                              <dd>...</dd>
+                              <dt>Recalling Firm Name</dt>
+                              <dd>...</dd>
+                              <dt>Quantity</dt>
+                              <dd>...</dd>
+                              <dt>Product Description</dt>
+                              <dd>...</dd>
+                            </dl>
+                        </div>
+                        <div class="action-bar col-md-12">
+                        	<a alt="Close Recall Detail" class="pull-right" data-toggle="collapse" href="#recallNumber001" aria-expanded="false" aria-controls="recallNumber001"  role="button"><span class="glyphicon glyphicon glyphicon-remove"></span> Close</a>
+                        </div>
+                	</section>    
+                </article>
+                <article class="col-md-12">
+                    <header class="row">
+                    	<div class="col-xs-3 col-sm-1 col-md-1">
+                    		<img alt="image" class="img-responsive" src="assets/images/dial_full-01.png">
+                        </div>
+                        <div class="col-xs-8 col-sm-11 col-md-11">
+                        	<a data-toggle="collapse" href="#recallNumber002" aria-expanded="false" aria-controls="recallNumber002" ><strong>Recall Number</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis...</a>
+                        <small class="text-muted clearfix">June 18th, 2015</small>
+                        </div>
+                    </header>
+                    <section id="recallNumber002" class="collapse row">  
+                    	<div class="col-md-11 col-md-offset-1">
+                            <dl>
+                              <dt>Recall Number</dt>
+                              <dd>...</dd>
+                              <dt>Recall Initiation Date</dt>
+                              <dd>...</dd>
+                              <dt>Reason for Recall</dt>
+                              <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis. Pellentesque placerat libero vitae sagittis semper.</dd>
+                              <dt>Distribution Pattern</dt>
+                              <dd>...</dd>
+                              <dt>Recalling Firm Name</dt>
+                              <dd>...</dd>
+                              <dt>Quantity</dt>
+                              <dd>...</dd>
+                              <dt>Product Description</dt>
+                              <dd>...</dd>
+                            </dl>
+                        </div>
+                        <div class="action-bar col-md-12">
+                        	<a alt="Close Recall Detail" class="pull-right" data-toggle="collapse" href="#recallNumber002" aria-expanded="false" aria-controls="recallNumber002"  role="button"><span class="glyphicon glyphicon glyphicon-remove"></span> Close</a>
+                        </div>
+                	</section>    
+                </article>
+                <footer class="col-md-12">
+                    <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </footer>
+            </section>
+            <section id="events" role="tabpanel" class="tab-pane item-listing row">
+                <header class="col-md-12">
+                    <h3>4 Adverse Events</h3>
+                </header>
+                <article class="col-md-12">
+                    <header class="row">
+                    	<div class="col-xs-3 col-sm-1 col-md-1">
+                    		<img alt="image" class="img-responsive" src="assets/images/dial_full-01.png">
+                        </div>
+                        <div class="col-xs-8 col-sm-11 col-md-11">
+                        	<a data-toggle="collapse" href="#ReportIdNumber001" aria-expanded="false" aria-controls="ReportIdNumber001" ><strong>Recall Number</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis...</a>
+                        <small class="text-muted clearfix">June 18th, 2015</small>
+                        </div>
+                    </header>
+                    <section id="ReportIdNumber001" class="collapse row">  
+                    	<div class="col-md-11 col-md-offset-1">
+                            <dl>
+                              <dt>Recall Number</dt>
+                              <dd>...</dd>
+                              <dt>Recall Initiation Date</dt>
+                              <dd>...</dd>
+                              <dt>Reason for Recall</dt>
+                              <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis. Pellentesque placerat libero vitae sagittis semper.</dd>
+                              <dt>Distribution Pattern</dt>
+                              <dd>...</dd>
+                              <dt>Recalling Firm Name</dt>
+                              <dd>...</dd>
+                              <dt>Quantity</dt>
+                              <dd>...</dd>
+                              <dt>Product Description</dt>
+                              <dd>...</dd>
+                            </dl>
+                        </div>
+                        <div class="action-bar col-md-12">
+                        	<a alt="Close Recall Detail" class="pull-right" data-toggle="collapse" href="#recallNumber001" aria-expanded="false" aria-controls="recallNumber001"  role="button"><span class="glyphicon glyphicon glyphicon-remove"></span> Close</a>
+                        </div>
+                	</section>    
+                </article>
+                <article class="col-md-12">
+                    <header class="row">
+                    	<div class="col-xs-3 col-sm-1 col-md-1">
+                    		<img alt="image" class="img-responsive" src="assets/images/dial_full-01.png">
+                        </div>
+                        <div class="col-xs-8 col-sm-11 col-md-11">
+                        	<a data-toggle="collapse" href="#ReportIdNumber002" aria-expanded="false" aria-controls="ReportIdNumber002" ><strong>Recall Number</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis...</a>
+                        <small class="text-muted clearfix">June 18th, 2015</small>
+                        </div>
+                    </header>
+                    <section id="ReportIdNumber002" class="collapse row">  
+                    	<div class="col-md-11 col-md-offset-1">
+                            <dl>
+                              <dt>Recall Number</dt>
+                              <dd>...</dd>
+                              <dt>Recall Initiation Date</dt>
+                              <dd>...</dd>
+                              <dt>Reason for Recall</dt>
+                              <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique eros eu purus dapibus iaculis. Pellentesque placerat libero vitae sagittis semper.</dd>
+                              <dt>Distribution Pattern</dt>
+                              <dd>...</dd>
+                              <dt>Recalling Firm Name</dt>
+                              <dd>...</dd>
+                              <dt>Quantity</dt>
+                              <dd>...</dd>
+                              <dt>Product Description</dt>
+                              <dd>...</dd>
+                            </dl>
+                        </div>
+                        <div class="action-bar col-md-12">
+                        	<a alt="Close Recall Detail" class="pull-right" data-toggle="collapse" href="#recallNumber002" aria-expanded="false" aria-controls="recallNumber002"  role="button"><span class="glyphicon glyphicon glyphicon-remove"></span> Close</a>
+                        </div>
+                	</section>    
+                </article>
+                <footer class="col-md-12">
+                    <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </footer>
+            </section>
+        </div>
+    </section>
+  </article>
+
+  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="assets/js/global.js"></script>
+</html>

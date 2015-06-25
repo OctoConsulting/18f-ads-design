@@ -8,13 +8,10 @@ Stylesheet: Base Stylesheet
 
 @white:                 #FFFFFF;
 @black:                 #000000;
-@teal:					#32A6AD;	
-@blue:             		#154E7D;	
-@dark-blue:         	#293655;
-
 @bamboo:                #BCB589;
 @gold:					#B0A248;	
-@light-blue:            #607D8B;
+@light-blue:            #607D8B;	
+@blue:             		#293655;
 @green:					#9AB45C;
 
 
@@ -34,13 +31,12 @@ Stylesheet: Base Stylesheet
 		font-family:'Roboto',Arial,Helvetica,sans-serif;
 	}
 	.home {
-		header {
-			margin-bottom:0;	
-		}
+		
 		.hero {
 			background: url(../images/MedCheck_hero.jpg) no-repeat left center; 
 			background-size: cover;
 			height:500px;
+			margin-top:50px;
 		}
 	}
 	
@@ -51,8 +47,8 @@ Stylesheet: Base Stylesheet
 	h1 {
 		font-size:2em;	
 		font-weight:900;	
-		margin-bottom:0;
-		color:@dark-blue;	
+		color:@blue;
+		margin-bottom:0;	
 	}
 	h2 {
 		font-size:1.8em;	
@@ -60,7 +56,7 @@ Stylesheet: Base Stylesheet
 	}
 	h3 {
 		font-size:1.6em;
-		font-weight:300;
+		font-weight:900;
   		margin:.5em 0;	
 	}
 	h4 {
@@ -71,14 +67,14 @@ Stylesheet: Base Stylesheet
 	}
 	h5 {
 		font-size:1.2em;
-		color:@blue;
-		margin-top:5px;		
+		color:@gold;
+		margin-top:0;		
 	}
 	p {
 		line-height:1.8em;	
 	}
 	a {
-		color:@blue;	
+		color:@light-blue;	
 	}
 	
 	a:hover {
@@ -103,12 +99,10 @@ Stylesheet: Base Stylesheet
 		}
 	}
 	.btn-primary {
-		background-color:@teal;
-		border:1px solid darken(@white, 20%);
+		background-color:@blue;
 		
 		&:hover, &:focus, &:active {
-			background-color:darken(@teal, 10%);
-			border:1px solid darken(@white, 20%);	
+			background-color:darken(@blue, 20%);	
 		}
 	}
 	
@@ -116,79 +110,111 @@ Stylesheet: Base Stylesheet
 		background-color:@white;	
 		border-bottom:2px solid darken(@white, 5%);
 		margin-bottom:20px;
-		padding-bottom:10px;
 	}
 	
 	.med-panel {
 		border-radius:0px;
 		border:	1px solid darken(@white, 5%);
 		box-shadow:none;
-		
-		.panel-footer {
-			background-color:darken(@white, 5%);
-			border:0px;
-			border-top:	2px solid darken(@white, 10%);
-			box-shadow:none;
+	}
+	
+	.med-info {
+		> header {
+			margin-top:20px;
+			margin-bottom:20px;
+			background-color:lighten(@light-blue, 50%);
+			border:1px solid lighten(@light-blue, 40%);
+		}
+		.nav-tabs {
+			border-bottom:15px solid lighten(@green, 10%);
+			li > a {
+				&:hover {
+					text-decoration:none;
+					background-color: lighten(@light-blue, 40%);
+					color:@blue;
+				}
+			}
+			li.active, li > a:focus {
+				background-color:lighten(@green, 10%);
+				
+				> a {
+					color:@white;	
+				}
+			}
+		}
+		.tab-pane {
+			border:solid 1px lighten(@green, 10%);
+			background-color:darken(@white, 2%);
+			
+			footer {
+				background-color: lighten(@green, 10%);	
+			}
 		}
 	}
 	.item-listing {
-		padding-top:5px;
-		padding-bottom:5px;
 		> article {
 			&:nth-child(even) > header {
-				.item-detail > div {
-					background-color:darken(@white, 5%);
-				}
+				background-color:darken(@white, 5%);
 			}
 			> header {
-				a {
-					font-weight:bold;
-					
-					&:hover, &:focus, &:active {
-						text-decoration:none;	
+				border-bottom:1px solid lighten(@light-blue, 40%);
+				padding:10px 0;
+				cursor: pointer;
+				&:hover, &.active {
+					background-color:lighten(@light-blue, 40%);
+					a {
+						color:@blue;	
+						text-decoration:none;
 					}
 				}
-				.item-detail {
-					&.active > div {
-						background-color:lighten(@blue, 70%);	
-					}
-					> div {
-						border:1px solid darken(@white, 10%);
-						background-color:@white;
-						&:hover {
-							background-color:lighten(@blue, 70%);
-							cursor: pointer;
-						}
-					}
+				a:hover {
+					text-decoration:none;
 				}
+			}
+			> section {
+				background-color:lighten(@light-blue, 50%);	
+				padding-top:10px;	
+				font-size:90%;
+				
+			}
+		}
+	}
+	.page-title {
+		border-left:10px solid @green;
+		padding-left:.6em;	
+	}
+	.pagination {
+		margin:10px 0;
+		
+		li > a {
+			border:solid 1px  @green;
+			background-color:@white;
+			color: @green;	
+			
+			&:hover {
+				border:solid 1px @light-blue;
+				color: @light-blue;
 			}
 		}
 	}
 	
+	.action-bar {
+		background-color:lighten(@light-blue, 40%);	
+		border-top:1px solid lighten(@light-blue, 30%);	
+		margin-top:10px;
+		
+		a {
+			padding:5px 10px;	
+			&:hover {
+				text-decoration:none;	
+			}
+		}
+	}
 	.med-search {
 		position: relative;
   		top: 50%;
   		transform: translateY(-50%);	
 	}
-	
-	.med-info {
-	
-	}
-	.med-detail {
-		
-	}
-	.med-filters {
-		border-top: 1px solid darken(@white, 5%);
-		border-bottom: 1px solid darken(@white, 5%);
-		padding-top:3px;
-		padding-bottom:3px;
-		margin-bottom:5px;	
-	}
-	
-	.med-graph {
-		margin-bottom:20px;	
-	}
-	
 	.big-num {
 		font-size:3em;
 		font-weight:600;	
@@ -201,43 +227,4 @@ Stylesheet: Base Stylesheet
 	  width: 100%;
 	  /* fix overflow */
 	  table-layout: fixed;
-	}
-	.highlight {
-		color:@teal;	
-	}
-	
-	.loading {
-  		background-image: url(../images/med_loading.gif);
-		background-position:bottom;
-		background-repeat: repeat-x;
-	}
-	
-	.pagination {
-		margin-top:0;
-		margin-bottom:0;
-		
-		> li > a, > li > a:focus, > li > a:active {
-			border:0px;
-			border-bottom:2px solid transparent;
-			margin:0 3px;
-			background-color:transparent;
-			color:@blue;
-			font-weight:600;
-			border-radius:0px;
-			
-			&:hover {
-				border-bottom-color:@teal;
-				color:@teal;
-				background-color:transparent;	
-			}
-			
-		}
-		> li:first-child > a, > li:first-child > span, > li:last-child > a, > li:last-child > span {
-			border-radius:0px;	
-		}
-		
-		> .active > a, > .active > a:focus, > .active > a:active, > .active > a:hover, > .active > span, > .active > span:focus, > .active > span:hover {
-			border-bottom-color:@teal;
-			color:@teal;
-		}
 	}
