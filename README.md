@@ -48,4 +48,6 @@ The project team captured user feedback in several ways and produced multiple UX
 
 During this phase, the team performed final field testing to ensure the application met the needs of the users and conducted usability testing with a broader set of Octo employees.  The team closed out the execution of the prototype by completing the documentation necessary for submitting the solicitation response to the government.
 
-## RFQ Section 24.A Criteria A through K – See Attachment E Approach Criteria Evidence for Pool 1 ##
+## RFQ Section 24.0 Factor 1: Technical Approach ##
+*   Evidence to Digital Services Playbook - See Repository for Artifacts
+*   Criteria A through K – See Attachment E Approach Criteria Evidence for Pool 1
