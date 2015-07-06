@@ -7,11 +7,11 @@ Lasso is an openFDA solution developed by Octo Consulting Group (Octo) in respon
 *   Focus on user experience through the creation of user personas, user testing and market surveys
 *   Use of Kanban for managing the backlog for User Interface and User Experience (UI/UX)
 
-## Our Approach  ## 
-# Planning Phase #
+# Our Approach  #
+## Planning Phase ##
 Octo assembled a project team consisting of experienced agile experts, UI/UX designers, and analysts. A group of Octo employees served as "users" during the development of the prototype, and reviewed FDA APIs to craft an initial problem statement that served as the scope for the project team.
 
-# Agile Development Phase #
+## Agile Development Phase ##
 ### Sprint # 0 (Planning) ###
 The project team reviewed the problem statement and analyzed the dataset to understand the API and data, which drove the architecture definition and development of initial user experience artifacts (such as personas).
 
@@ -41,7 +41,7 @@ The project team captured user feedback in several ways and produced multiple UX
 
 During this phase, the team performed final field testing to ensure the application met the needs of the users and conducted usability testing with a broader set of Octo employees.  The team closed out the execution of the prototype by completing the documentation necessary for submitting the solicitation response to the government.
 
-### Alignment to Digital Services Playbook – See Appendix E ###
+## Alignment to Digital Services Playbook – See Appendix E ##
 
-## 18F ADS Pool 1 (Design)
+## 18F ADS Pool 1 (Design) ##
 http://ec2-54-85-205-14.compute-1.amazonaws.com
