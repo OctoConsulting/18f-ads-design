@@ -4,12 +4,17 @@
 
 <http://ec2-54-85-205-14.compute-1.amazonaws.com>
 
+# Deployment #
+To deploy this design prototype, simply clone the repository into a web-accessible directory:
+
+	git clone https://github.com/OctoConsulting/18f-ads-pool-1.git
+
 # Introduction #
 Lasso is an openFDA solution developed by Octo Consulting Group (Octo) in response to the solicitation released by GSA 18F for Agile Delivery Services (ADS). Using adverse event and recall data from openFDA’s drug dataset, Lasso provides a holistic view of a drug’s adverse events and recalls. Currently, Lasso is in prototype form only. The key highlights of our approach include:
 *   Focus on user experience through the creation of user personas, user testing and market surveys
 *   Use of Kanban for managing the backlog for User Interface and User Experience (UI/UX)
 
-# Our Approach  #
+# Description of Our Approach #
 ## Planning Phase ##
 Octo assembled a project team consisting of experienced agile experts, UI/UX designers, and analysts. A group of Octo employees served as "users" during the development of the prototype, and reviewed FDA APIs to craft an initial problem statement that served as the scope for the project team.
 
@@ -43,9 +48,4 @@ The project team captured user feedback in several ways and produced multiple UX
 
 During this phase, the team performed final field testing to ensure the application met the needs of the users and conducted usability testing with a broader set of Octo employees.  The team closed out the execution of the prototype by completing the documentation necessary for submitting the solicitation response to the government.
 
-## Alignment to Digital Services Playbook – See Appendix E ##
-
-## Deployment ##
-To deploy this design prototype, simply clone the repository into a web-accessible directory:
-
-	git clone https://github.com/OctoConsulting/18f-ads-pool-1.git
+## RFQ Section 24.A Criteria A through K – See Appendix E ##
