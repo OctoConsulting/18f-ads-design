@@ -47,4 +47,4 @@ During this phase, the team performed final field testing to ensure the applicat
 
 ## Deployment ##
 To deploy this design prototype, simply clone the repository into a web-accessible directory:
-  git clone https://github.com/OctoConsulting/18f-ads-pool-1.git
+	git clone https://github.com/OctoConsulting/18f-ads-pool-1.git
