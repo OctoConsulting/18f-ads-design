@@ -10,12 +10,10 @@ Stylesheet: Base Stylesheet
 @black:                 #000000;
 @teal:					#32A6AD;	
 @blue:             		#154E7D;	
-@dark-blue:         	#293655;
+@dark-blue:         	#293655;	
+@green:		         	#8CC640;	
+@gray:		         	#4F4F4F;
 
-@bamboo:                #BCB589;
-@gold:					#B0A248;	
-@light-blue:            #607D8B;
-@green:					#9AB45C;
 
 
 // --------------------------------------------------
@@ -27,22 +25,19 @@ Stylesheet: Base Stylesheet
 @font-face{font-family:'Roboto';font-style:normal;font-weight:900;src:local('Roboto Black'),local('Roboto-Black'),url(http://fonts.gstatic.com/s/roboto/v14/mnpfi9pxYH-Go5UiibESIj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');}
 
 	body {
-		background-color:darken(@white, 2%);
+		background-color:@white;
 		color:lighten(@black, 15%);
 		font-weight:300;
 		font-size:16px;
 		font-family:'Roboto',Arial,Helvetica,sans-serif;
-	}
-	.home {
-		header {
-			margin-bottom:0;	
+		
+		> header {
+			margin-bottom:2.5em;	
 		}
-		.hero {
-			background: url(../images/MedCheck_hero.jpg) no-repeat left center; 
-			background-size: cover;
-			height:500px;
+		> footer {
+			margin-top:2.5em;	
 		}
-	}
+	}	
 	
 	strong {
 		font-weight:900;	
@@ -53,6 +48,16 @@ Stylesheet: Base Stylesheet
 		font-weight:900;	
 		margin-bottom:0;
 		color:@dark-blue;	
+		
+		small{
+			font-weight:300;
+			color:@teal;
+			display:block;
+			margin:.3em 0;
+			a {
+				font-size:.7em;
+			}
+		}
 	}
 	h2 {
 		font-size:1.8em;	
@@ -61,183 +66,360 @@ Stylesheet: Base Stylesheet
 	h3 {
 		font-size:1.6em;
 		font-weight:300;
-  		margin:.5em 0;	
+  		margin:.5em 0;
+		&.teal {
+			color:@teal;	
+		}
 	}
 	h4 {
-		font-size:1.4em;	
-		line-height:1.6em;
-		font-size:1.3em;
-		color:@green;	
+		font-size:1.2em;	
+		line-height:1.4em;
+		margin:.3em 0;	
 	}
 	h5 {
-		font-size:1.2em;
-		color:@blue;
-		margin-top:5px;		
+		font-size:1.1em;
+		line-height:1.4em;
+		color:@green;
+		margin:.3em 0;
+		font-weight:300;		
 	}
 	p {
 		line-height:1.8em;	
 	}
 	a {
 		color:@blue;	
+		text-decoration:underline;
 	}
 	
 	a:hover {
-		color: darken(@light-blue, 20%);
+		color: darken(@blue, 20%);
 	}
-	.navbar {
-		background-color:@blue;	
-		color:@white;
-		
-		.nav > li > a:hover {
-			background-color:@light-blue;
-			color:@white;	
-		}
-		li.active {
-			background-color:@light-blue;	
-			a {
-				color:darken(@white, 5%);	
+	
+	
+	.home {
+		.intro {
+			padding-bottom:2.5em;
+			p {
+				border-bottom:1px solid lighten(@green, 40%);	
+				padding-bottom:1.3em;
+			}
+			a.jumps {
+				color:@blue;
+				font-size:1.2em;
+				font-weight:300;
+				text-decoration:none;
+				span {
+					color:@green;	
+				}
+				&:hover {
+					color:darken(@gray, 10%);
+					span {
+						color:@dark-blue;	
+					}
+				}
 			}
 		}
-		a {
+		#highlights {
+			background-color:@green;
+			padding:2.5em 0;	
+		}
+		
+		.media-heading {
 			color:@white;
+			font-weight:700;	
+		}
+		.media-body > p {
+			color:@dark-blue;
+			line-height:1.4;
+			font-size:14px;	
+		}
+		.media img {
+			height:70px;
+			width:70px;	
 		}
 	}
+	.med-header {
+		background-color:@dark-blue;	
+		margin-bottom:2.5em;
+		.med-logo {
+			display:block;
+			img {
+				width:100%;	
+			}
+		}
+	}
+	.disclaimer {
+		background-color:@gray;
+		color:@white;
+		p {
+			padding:1.1em 0;	
+		}
+	}
+	
 	.btn-primary {
 		background-color:@teal;
-		border:1px solid darken(@white, 20%);
+		border:1px solid @teal;
+		border-radius:0;	
+		text-decoration:none;
 		
 		&:hover, &:focus, &:active {
 			background-color:darken(@teal, 10%);
-			border:1px solid darken(@white, 20%);	
+			border:1px solid darken(@teal, 10%); 	
+			text-decoration:none;
 		}
 	}
-	
-	.med-header {
-		background-color:@white;	
-		border-bottom:2px solid darken(@white, 5%);
-		margin-bottom:20px;
-		padding-bottom:10px;
+	.form-control {
+		border-radius:0;
+		border:0px;	
 	}
 	
-	.med-panel {
-		border-radius:0px;
-		border:	1px solid darken(@white, 5%);
-		box-shadow:none;
-		
-		.panel-footer {
-			background-color:darken(@white, 5%);
-			border:0px;
-			border-top:	2px solid darken(@white, 10%);
-			box-shadow:none;
-		}
-	}
-	.item-listing {
-		padding-top:5px;
-		padding-bottom:5px;
-		> article {
-			&:nth-child(even) > header {
-				.item-detail > div {
-					background-color:darken(@white, 5%);
-				}
-			}
-			> header {
-				a {
-					font-weight:bold;
-					
-					&:hover, &:focus, &:active {
-						text-decoration:none;	
-					}
-				}
-				.item-detail {
-					&.active > div {
-						background-color:lighten(@blue, 70%);	
-					}
-					> div {
-						border:1px solid darken(@white, 10%);
-						background-color:@white;
-						&:hover {
-							background-color:lighten(@blue, 70%);
-							cursor: pointer;
-						}
-					}
-				}
+	nav.nav-med-tabs {
+		margin:.8em 0;
+		li .med-link {
+			border-bottom:2px solid lighten(@gray, 40%);
+			padding:.5em .8em;
+			text-decoration:none;
+			
+			&:hover, &:focus {
+				background:none;
+				border-color:@gray;	
 			}
 		}
+		li.active .med-link {
+			border-color:@green;
+			background:none;
+			color:@green;	
+		}
+	}
+	.breaker-panel {
+		background-image:url(../images/Lasso_search_breaker.jpg);
+		background-attachment: scroll;
+		background-size: cover;
+		background-position: left center;
+		height: 400px;
+		background-repeat:no-repeat;
+	}
+	.breaker-pills {
+		background-image:url(../images/Lasso_pills_breaker.jpg);
 	}
 	
-	.med-search {
-		position: relative;
-  		top: 50%;
-  		transform: translateY(-50%);	
+	.med-summary-listing {
+		font-size:.9em;
+		.row {
+			border-bottom:1px solid lighten(@gray, 60%);	
+			padding-top:.8em;
+			padding-bottom:.8em;
+		}
+		.row:nth-child(even) {
+			background-color:darken(@white, 2%);
+		}
 	}
-	
-	.med-info {
-	
+	.med-listing {
+		article {
+			padding:.8em .5em;
+			font-size:.8em;
+			border-bottom:2px solid darken(@white, 5%);
+			margin-top:0;
+			&:nth-child(odd) {
+				background-color:darken(@white, 3%);	
+			}
+			.pull-left strong {
+				display:block;
+				color:@green;
+				font-weight:300;	
+				line-height:1.3em;
+			}
+			h4.media-heading {
+				color:@dark-blue;
+				line-height:1.1em;
+				small {
+					color:@teal;	
+					display:block;
+					margin:.5em 0;
+				}
+			}
+			.patient-info {
+				line-height:30px;
+				.gender-icon {
+					display:block;
+					margin-right:5px;
+					padding-left:40px;	
+					background:url(../images/gender-sprite.png) 0 0 no-repeat;
+					font-weight:500;
+					text-transform:uppercase;
+				}
+				.male {
+					background-position:0px 0px;	
+				}
+				.female {
+					background-position:0px -30px;	
+				}
+				.unknown {
+					background-position:0px -60px;	
+				}
+			}
+			.toggle-details dl {
+				font-size:.9em;
+				margin:1em 0;
+				color:@gray;
+				dt {	
+					font-weight:500;
+				}
+			}
+		}
 	}
-	.med-detail {
-		
+	.nav-toggle {
+		color:@teal;
+		text-decoration:none;
+		font-weight:300;
+		&:hover, &:focus, &:active {
+			color:darken(@teal, 10%);
+		}	
 	}
 	.med-filters {
 		border-top: 1px solid darken(@white, 5%);
 		border-bottom: 1px solid darken(@white, 5%);
-		padding-top:3px;
-		padding-bottom:3px;
-		margin-bottom:5px;	
+		padding-top:.2em;
+		padding-bottom:.2em;
+		margin-bottom:1.5em;	
+		h6 {
+			color:lighten(@gray, 40%);
+			font-weight:400;
+			margin:.3em;
+			font-size:.9em;	
+		}
+		> ul {
+			margin-bottom:0;
+			
+			> li {
+				a {
+					text-decoration:none;
+					cursor:pointer;
+					&:hover {
+						color:@blue;	
+					}
+				}
+				> a {
+					color:lighten(@gray, 30%);;
+					margin-left:.8em;	
+					font-size:.8em;
+					&:hover {
+						color:@teal;	
+					}
+				}
+				> ul li {
+					border-bottom:1px solid darken(@white, 5%);
+					background-color:darken(@white, 2%);
+					&:nth-child(even) {
+						background-color:darken(@white, 1%);
+					}
+					> a:hover {
+						background:darken(@white, 5%);	
+					}
+				}
+			}
+		}
 	}
-	
-	.med-graph {
-		margin-bottom:20px;	
+	.med-panel {
+		border-radius:0px;
+		border-bottom: 2px dotted darken(@white, 10%);
+		box-shadow:none;
+		margin-bottom:2.5em;
+	}
+	#medSearch {
+		padding:.5em 0;
+		
+		.twitter-typeahead{
+			width: 100%;
+			float:left;
+		}
+		.tt-menu{
+			width: 100%;
+			background-color:darken(@white, 2%);
+			.tt-suggestion:nth-child(even) {
+				background-color:darken(@white, 1%);	
+			}
+			.tt-suggestion {
+				padding:.8em;
+				cursor: pointer;
+				border-bottom:1px solid darken(@white, 5%);
+				&:hover {
+					background-color:darken(@white, 5%);
+					color:@blue;	
+				}
+			}
+		}
+		.input-group-btn {
+			padding:0;	
+		}
 	}
 	
 	.big-num {
-		font-size:3em;
-		font-weight:600;	
+		font-size:3.5em;
+		color:@teal;
+		display:block;
+		font-weight:500;	
 	}
-	.col-middle {
-	  vertical-align: middle;
+	.block-num {
+		font-size:1.2em;
+		color:@white;
+		display:block;
+		background-color:@green;
 	}
-	.row-same-height {
-	  display: table;
-	  width: 100%;
-	  /* fix overflow */
-	  table-layout: fixed;
-	}
-	.highlight {
-		color:@teal;	
+	.viz-panel {
+		margin-bottom:2.5em;
+		position:relative;
+		
+		.viz-panel-header {
+			height: 50px; 
+			text-align:center; 
+			display:table;
+			width:100%;
+			
+			h6 {
+				display:table-cell;
+				vertical-align:middle;
+				color:@gray;
+			}
+	
+		}
 	}
 	
-	.loading {
-  		background-image: url(../images/med_loading.gif);
-		background-position:bottom;
-		background-repeat: repeat-x;
+	.top-listing {
+		font-weight:600;
+		color:@teal;
+		a {
+			color:@gray;
+			text-decoration:none;
+			font-weight:300;
+			
+			strong {
+				color:@dark-blue;
+				font-weight:400;	
+			}
+		}
 	}
 	
 	.pagination {
-		margin-top:0;
-		margin-bottom:0;
-		
-		> li > a, > li > a:focus, > li > a:active {
-			border:0px;
-			border-bottom:2px solid transparent;
-			margin:0 3px;
-			background-color:transparent;
-			color:@blue;
-			font-weight:600;
-			border-radius:0px;
-			
-			&:hover {
-				border-bottom-color:@teal;
-				color:@teal;
-				background-color:transparent;	
+		li {
+			a {
+				color:@gray;
+				border:none;
+				border-radius:0px;
+				&:hover {
+					background-color:@gray;	
+					color:@white;
+				}
 			}
-			
+			&:last-child > a, &:last-child > span, &:first-child > a, &:first-child > span {
+				border-radius:0px;	
+			}
 		}
-		> li:first-child > a, > li:first-child > span, > li:last-child > a, > li:last-child > span {
-			border-radius:0px;	
-		}
-		
-		> .active > a, > .active > a:focus, > .active > a:active, > .active > a:hover, > .active > span, > .active > span:focus, > .active > span:hover {
-			border-bottom-color:@teal;
-			color:@teal;
+		li.active {
+			a, a:hover, a:focus, a:active {
+				background-color:@teal;
+				color:@white;	
+			}
 		}
 	}
+	

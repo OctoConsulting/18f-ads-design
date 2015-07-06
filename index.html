@@ -4,38 +4,179 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>MedCheck - Check Twice - Choose Once</title>
+	<title>Lasso | Rope in the Knowledge</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
 </head>
 <body class="home">
-	<header class="container-fluid med-header">
-    	<div class="row">
-        	<div class="row-same-height">
-                <div class="col-md-4 col-md-height text-center">
-                    <img alt="MedCheck Logo" src="assets/images/logo_proposal_medcheck_banner.png" class="img-responsive"/>
+	<header class="med-header">
+    	<div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-3 col-xs-8 col-xs-offset-2 col-sm-offset-0 text-center">
+                    <a class="med-logo" href="index.html" alt="Link to Lasso Home"><img alt="Lasso Logo" src="assets/images/lasso_logo.png"/></a>
                 </div>
-                <div class="col-md-8 col-middle col-md-height">
-                    <div class="input-group">
-                         <input type="text" class="form-control input-lg" placeholder="e.g. Tylenol PM">
+                <div class="col-md-6 col-md-offset-3 col-sm-9 col-xs-12">
+                    <form class="form-search input-group" id="medSearch">
+                         <input type="text" class="form-control input-lg typeahead" placeholder="e.g. Tylenol Regular Strength">
                          <span class="input-group-btn">
-                             <button class="btn btn-primary btn-lg" type="button">
+                             <button class="btn btn-primary btn-lg" type="submit">
                              <span class="glyphicon glyphicon-search"></span>
                              </button>
                         </span>
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </header>
+    <section class="container intro">
+    	<div class="row">
+        	<div class="col-md-4 col-sm-offset-2 col-md-offset-0 col-sm-8 col-xs-offset-2 col-xs-8">
+            	<img src="assets/images/lasso_welcome.png" class="img-responsive"  alt="Iconic Representation of the Lasso Logo" />
+            </div>
+            
+        	<div class="col-md-8 col-xs-12">
+            	<h1>Rope in the Knowledge with Lasso</h1>
+                <p class="lead">Lasso is an <a href="https://open.fda.gov/" alt="Link to OpenFDA website" target="_blank">openFDA</a> driven solution that provides you with a safety assessment of your drug of interest. Pulling data from the adverse event and recall data from openFDA’s drug dataset, Lasso provides a holistic and filterable view of a drug’s adverse events and recalls.</p>
+                <ul class="list-inline list-unstyled">
+                	<li><a class="jumps" href="#highlights" alt="Link to Lasso Highlights Section"><span class="glyphicon glyphicon-circle-arrow-right"></span> Lasso Highlights</a></li>
+                	<li><a class="jumps" href="#topSearch" alt="Link to Lasso's Top Searches Section"><span class="glyphicon glyphicon-circle-arrow-right"></span> Top Searches</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="breaker-panel breaker-pills">
+    
+    </section>
+    <section id="highlights">
+    	<div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img alt="" src="assets/images/p1_learn.png" />
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Learn</h3>
+                            <p><strong>Adverse Event Report</strong> are submitted to the FDA to report any undesirable experience associated with the use of a medical product in a patient.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img alt="" src="assets/images/p1_discover.png" />
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Discover</h3>
+                            <p><strong>Recalls</strong> are actions taken by a firm to remove a product from the market. Recalls may be conducted on a firm's own initiative, by FDA request, or by FDA order under statutory authority.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img alt="" src="assets/images/p1_explore.png" />
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Explore</h3>
+                            <p><strong>Lasso</strong> allows you to filter the data to narrow down a drug’s data to a desired subset.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-    </header>
-    <section class="container-fluid hero">
+    	</div>
     </section>
-    <footer>
+    <section class="breaker-panel breaker-search">
     
+    </section>
+    <section class="container med-summary-listing" id="topSearch">
+    	<h3 class="teal">Top Searches</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <h4>Tylenol Regular Strength</h4>
+                <p>Purpose Pain reliever/fever reducer.</p>
+                <ul class="list-unstyled">
+                    <li><a href="details.html?q=Tylenol%20Regular%20Strength#events">Total Adverse Events</a> (59,361)</li>
+                </ul>
+                <a href="details.html?q=Tylenol%20Regular%20Strength#events" class="btn btn-primary" alt="View all data associated with Drug">View Details</a>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-xs">
+                <h5 class="text-uppercase">Top Reactions</h5>
+                <ol class="top-listing">
+                    <li><a href="details.html?q=Tylenol%20Regular%20Strength#events"><strong>Pain</strong> (3,334, 6%)</a></li>
+                    <li><a href="details.html?q=Tylenol%20Regular%20Strength#events"><strong>Drug Ineffective</strong> (3,234, 6%)</a></li>
+                    <li><a href="details.html?q=Tylenol%20Regular%20Strength#events"><strong>Nausea</strong> (2,834, 5%)</a></li>
+                    <li><a href="details.html?q=Tylenol%20Regular%20Strength#events"><strong>Headache</strong> (2,412, 4%)</a></li>
+                    <li><a href="details.html?q=Tylenol%20Regular%20Strength#events"><strong>Vomiting</strong> (2,302, 4%)</a></li>
+                </ol>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <h5 class="text-uppercase">Adverse Reactions by Age</h5>
+                <img alt="Sample Bar Chart" src="assets/images/charts/graph_bar_age-01.png" class="img-responsive" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <h4>Advil</h4>
+                <p>Purpose Pain reliever/Fever reducer.</p>
+                <ul class="list-unstyled">
+                    <li><a href="details.html?q=Advil#events" alt="View Advil Adverse Events">Total Adverse Events</a> (49,243)</li>
+                </ul>
+                <a class="btn btn-primary" href="details.html?q=Advil" alt="View all data associated with Drug">View Details</a>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-xs">
+                <h5 class="text-uppercase">Top Reactions</h5>
+                <ol class="top-listing">
+                    <li><a href="details.html?q=Advil#events"><strong>Pain</strong> (3,334, 6%)</a></li>
+                    <li><a href="details.html?q=Advil#events"><strong>Drug Ineffective</strong> (3,234, 6%)</a></li>
+                    <li><a href="details.html?q=Advil#events"><strong>Nausea</strong> (2,834, 5%)</a></li>
+                    <li><a href="details.html?q=Advil#events"><strong>Headache</strong> (2,412, 4%)</a></li>
+                    <li><a href="details.html?q=Advil#events"><strong>Vomiting</strong> (2,302, 4%)</a></li>
+                </ol>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <h5 class="text-uppercase">Adverse Reactions by Age</h5>
+                <img alt="Sample Bar Chart" src="assets/images/charts/graph_bar_age-01.png" class="img-responsive" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <h4>Acetaminophen</h4>
+                <p>Purpose Pain reliever/fever reducer.</p>
+                <ul class="list-unstyled">
+                    <li><a href="details.html?q=Acetaminophen#events">Total Adverse Events</a> (61,453)</li>
+                    <li><a href="details.html?q=Acetaminophen#recalls">Total Recalls</a> (11)</li>
+                </ul>
+                <a href="details.html?q=Acetaminophen#events" class="btn btn-primary" alt="View all data associated with Drug">View Details</a>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-xs">
+                <h5 class="text-uppercase">Top Reactions</h5>
+                <ol class="top-listing">
+                    <li><a href="details.html?q=Acetaminophen#events"><strong>Pain</strong> (3,334, 6%)</a></li>
+                    <li><a href="details.html?q=Acetaminophen#events"><strong>Drug Ineffective</strong> (3,234, 6%)</a></li>
+                    <li><a href="details.html?q=Acetaminophen#events"><strong>Nausea</strong> (2,834, 5%)</a></li>
+                    <li><a href="details.html?q=Acetaminophen#events"><strong>Headache</strong> (2,412, 4%)</a></li>
+                    <li><a href="details.html?q=Acetaminophen#events"><strong>Vomiting</strong> (2,302, 4%)</a></li>
+                </ol>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <h5 class="text-uppercase">Adverse Reactions by Age</h5>
+                <img alt="Sample Bar Chart" src="assets/images/charts/graph_bar_age-01.png" class="img-responsive" >
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid disclaimer">
+    	
+    	<div class="row">
+        	<div class="col-md-6 col-md-offset-3">
+            	<p class="small text-center">This site is not intended to provide medical advice, diagnosis or treatment. Please consult your physician for all medications related questions.</p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/libs/typeaheadJS/typeahead.bundle.js"></script>
+<script src="assets/js/global.js"></script>
 </html>

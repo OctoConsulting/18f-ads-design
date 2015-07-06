@@ -1,1 +1,0 @@
-$(function(){$(".item-listing > article").click(function(){var e=$(this).find(".item-link").attr("href");$(this).find(".item-detail").toggleClass("active");$(e).collapse("toggle");return!1})});
