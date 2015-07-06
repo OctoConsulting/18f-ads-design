@@ -20,7 +20,7 @@ The project team reviewed the problem statement and analyzed the dataset to unde
 During this Sprint, the team also:
 *   Identified high level features required to meet the needs of the users
 *   Decomposed the features into user and technical stories that could be completed in a single sprint
-*   Created a product vision and roadmap for delivery of features in multiple releases 
+*   Created a product vision and roadmap for delivery of features in multiple releases
 
 ### Sprint # 1..N (Sprinting) ###
 The UI/UX team tracked their work using Kanban to ensure they stay ahead of the development team. The team initially planned for 3 production releases of the prototype. Features were planned for each Release, and individual stories for each feature were slotted in sprints within each Release. The team made adjustments to the product based on user feedback after each demo to the users and by collaborating with the users while working within the constraints imposed by the APIs. For example, we proposed an alternate set of features to the users when the FDA API could not provide some of the data needed for a specific features requested.
@@ -33,10 +33,10 @@ The information gathered from users was used to continuously refine the prototyp
 
 The project team captured user feedback in several ways and produced multiple UX/UI artifacts to ensure the prototype was developed in alignment with user needs:
 *   Met with the user to ensure that the problem statement was fully understood, to discuss desired features, and prioritization for all features
-*   Created user personas to capture demographics and needs of different users of the prototype 
-*   Distributed an electronic survey for desired features and expected usage of the prototype 
-*   Generated Workflows to document how a user progresses through the prototype 
-*   Created a basic wireframe and prototype of the homepage to lay a foundation for the prototype 
+*   Created user personas to capture demographics and needs of different users of the prototype
+*   Distributed an electronic survey for desired features and expected usage of the prototype
+*   Generated Workflows to document how a user progresses through the prototype
+*   Created a basic wireframe and prototype of the homepage to lay a foundation for the prototype
 *   Created an information architecture to organize site content and enriched content using visualizations and metadata
 
 ### Sprint # X (Hardening) & Closeout ###
@@ -47,4 +47,5 @@ During this phase, the team performed final field testing to ensure the applicat
 
 ## Deployment ##
 To deploy this design prototype, simply clone the repository into a web-accessible directory:
+
 	git clone https://github.com/OctoConsulting/18f-ads-pool-1.git
