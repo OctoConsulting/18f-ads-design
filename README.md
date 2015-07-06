@@ -44,5 +44,3 @@ The project team captured user feedback in several ways and produced multiple UX
 During this phase, the team performed final field testing to ensure the application met the needs of the users and conducted usability testing with a broader set of Octo employees.  The team closed out the execution of the prototype by completing the documentation necessary for submitting the solicitation response to the government.
 
 ## Alignment to Digital Services Playbook – See Appendix E ##
-
-## 18F ADS Pool 1 (Design) ##
