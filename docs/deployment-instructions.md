@@ -2,10 +2,14 @@
 ## Octo Consulting Group ##
 ## Deployment Instructions ##
 
-To deploy this design prototype, simply clone the repository into a web-accessible directory:
+To deploy this design prototype, simply clone the repository into any directory:
 
 	git clone https://github.com/OctoConsulting/18f-ads-pool-1.git
 
-Open a web browser and launch index.html from the root directory
+If the directory is web-accessible, you can access the prototype directly at index.html:
 
-	file:///<installation-directory>/index.html
+	http://<domain>/<installation directory>/index.html
+
+Otherwise, you can access the prototype directly from your file system:
+
+	file:///<installation directory>/index.html
