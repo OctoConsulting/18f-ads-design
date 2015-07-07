@@ -47,7 +47,7 @@ The project team captured user feedback in several ways and produced multiple UX
 *   Created a basic wireframe and prototype of the homepage to lay a foundation for the prototype
 *   Created an information architecture to organize site content and enriched content using visualizations and metadata
 
-### Sprint # X (Hardening) & Closeout ###
+## Closeout ##
 
 During this phase, the team performed final field testing to ensure the application met the needs of the users and conducted usability testing with a broader set of Octo employees.  The team closed out the execution of the prototype by completing the documentation necessary for submitting the solicitation response to the government.
 
