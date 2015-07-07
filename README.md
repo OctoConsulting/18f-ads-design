@@ -57,5 +57,5 @@ During this phase, the team performed final field testing to ensure the applicat
 
 # Alignment to Digital Services Playbook #
 
-<https://github.com/OctoConsulting/18f-ads-pool-1/blob/master/docs/deployment-instructions.md>
+<https://github.com/OctoConsulting/18f-ads-pool-1/blob/master/docs/DSP%20Alignment.xlsx>
    
