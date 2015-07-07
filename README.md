@@ -6,7 +6,7 @@
   <img src="https://github.com/OctoConsulting/18f-ads-pool-1/blob/master/assets/images/lasso_logo.png?raw=true">
 </p>
 
-Prototye URL:
+Prototype URL:
 <http://ec2-54-85-205-14.compute-1.amazonaws.com>
 
 Deployment Instructions:
