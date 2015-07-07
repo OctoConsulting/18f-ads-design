@@ -6,7 +6,11 @@
   <img src="https://github.com/OctoConsulting/18f-ads-pool-1/blob/master/assets/images/lasso_logo.png?raw=true">
 </p>
 
+Prototye URL:
 <http://ec2-54-85-205-14.compute-1.amazonaws.com>
+
+Deployment Instructions:
+<https://github.com/OctoConsulting/18f-ads-pool-1/blob/master/docs/deployment-instructions.md>
 
 # Introduction #
 Lasso is an openFDA solution developed by Octo Consulting Group (Octo) in response to the solicitation released by GSA 18F for Agile Delivery Services (ADS). Using adverse event and recall data from openFDA’s drug dataset, Lasso provides a holistic view of a drug’s adverse events and recalls. Currently, Lasso is in prototype form only. The key highlights of our approach include:
@@ -50,3 +54,8 @@ During this phase, the team performed final field testing to ensure the applicat
 ## RFQ Section 24.0 Factor 1: Technical Approach ##
 *   Evidence to Digital Services Playbook - See Repository for Artifacts
 *   Criteria A through K – See Attachment E Approach Criteria Evidence for Pool 1
+
+# Alignment to Digital Services Playbook #
+
+<https://github.com/OctoConsulting/18f-ads-pool-1/blob/master/docs/deployment-instructions.md>
+   
